@@ -28,7 +28,7 @@ namespace ListManipulation
                 case "countOdds": 
                     break;
                 default:
-                    Console.WriteLine("");
+                    Console.WriteLine("test");
                     break;
             }
         }
