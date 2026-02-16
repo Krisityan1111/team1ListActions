@@ -14,10 +14,21 @@ namespace ListManipulation
             switch (cmd[0])
             {
                 case "add":
+                    nums.Add(int.Parse(cmd[1]));
+                    Console.WriteLine(string.Join(" ", nums));
                     break;
                 case "ins":
                     break;
-                case "contains":                    
+                case "contains":   
+                    if (nums.Contains(int.Parse(cmd[1])))
+                    {
+                        Console.WriteLine("Yes");
+                        Console.WriteLine(string.Join(" ", nums));
+                    }
+                    else
+                    {
+                        Console.WriteLine("No");
+                    }
                     break;
                 case "delete":
                     break;
